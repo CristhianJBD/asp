@@ -1,0 +1,6 @@
+ i + * ( ) $
+E E->TA - - E->TA - -
+A - A->+TA - - A->Ɛ A->Ɛ
+T T->FS - - T->FS - -
+S - S->Ɛ S->*FS - S->Ɛ S->Ɛ
+F F->i - - F->(E) - -

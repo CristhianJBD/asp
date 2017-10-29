@@ -1,0 +1,16 @@
+Establecer ip para que apunte al primer simbolo de w
+establecer X con el simbolo de la parte superior de la pila
+
+while(X<>$){
+    if(X es a)
+    else if(X es un Terminal) errror()
+    else if(M[X,a] es una entrada de error) error()
+    else if(M[X,a]=X->Y1Y2....Yn){
+        enviar de la salida la produccion X->Y1Y1....Yn
+        sacar de la pila;
+        meter Yn....Y2Y1 en la pila con Y1 en la parte superior
+
+    }
+    establecer X con el simbolo de la parte superior de la pila;
+
+ }
