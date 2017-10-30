@@ -25,7 +25,24 @@ public class Reader {
 
             }
 
-            System.out.println("Tabla: "+ tabla);
+            Integer i = 0;
+            for(List<String> row : tabla){
+                if(i==0){
+                    for(String s: row){
+                        System.out.print(String.format("%1$-15s",s));
+                    }
+                    String formato = "%1$-"+row.size()*15+"s";
+                    System.out.println();
+                    System.out.println(String.format(formato,"").replace(" ","-"));
+                }
+                else{
+                    for(String s: row){
+                        System.out.print(String.format("%1$-15s",s));
+                    }
+                    System.out.println();
+                }
+                i++;
+            }
         }
         catch (Exception ex)
         {

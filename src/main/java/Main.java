@@ -19,7 +19,7 @@ public class Main {
         ASP asp = new ASP();
 
       //  cadenaEntrada="i+i*i";
-          cadenaEntrada="n+i*n";
+          cadenaEntrada="n*+i*n";
 
         asp.algoritmo(cadenaEntrada, tabla);
     }
