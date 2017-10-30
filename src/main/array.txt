@@ -1,5 +1,5 @@
  i + * ( ) $
-E E->TA - - E->TA - x
+E E->TA - - E->TA x x
 A - A->+TA - - A->Ɛ A->Ɛ
 T T->FS x - T->FS x x
 S - S->Ɛ S->*FS - S->Ɛ S->Ɛ

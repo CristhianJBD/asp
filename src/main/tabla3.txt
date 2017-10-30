@@ -1,0 +1,6 @@
+ a b c d e f g h $
+S - S->b S->AaS S->AaS S->AaS - - - x
+A x - A->cB A->dB A->eCDBfDB - - - -
+B B->Ɛ - - - - B->Ɛ B->DB B->DB -
+C x - C->c C->d C->eCDBf x x x -
+D x - - - - x D->gC D->hC -
