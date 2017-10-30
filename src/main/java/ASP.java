@@ -7,6 +7,7 @@ import java.util.*;
 public class ASP {
 
     private Integer observaciones = 0;
+    private List<Integer> posError = new ArrayList<Integer>();
     private List<String> terminales;
     private String entrada;
 
@@ -48,11 +49,13 @@ public class ASP {
             else if(isTerminal(X)){
                 this.observaciones++;
                 input = input.substring(1);
+                posError.add(this.entrada.length() - input.length());
             }
             else if(treeMap.get(key).compareTo("-")==0  || treeMap.get(key).compareTo("x")==0){
                 if(treeMap.get(key).compareTo("-")==0){
                     this.observaciones++;
                     input = input.substring(1);
+                    posError.add(this.entrada.length() - input.length());
                 }else if(treeMap.get(key).compareTo("x")==0){
                     pila.pop();
                     this.observaciones++;
@@ -75,13 +78,26 @@ public class ASP {
         System.out.println();
         System.out.println("Salida: ");
         if(this.observaciones == 0){
-            for(String o : output)
-                System.out.println(o);
+            for(String o : output){
+                if(o.compareTo("-")!=0){
+                    System.out.println(o);
+                }
+            }
+
         }else{
             System.out.println("Error sintactico en " + this.entrada );
+            System.out.print("                    ");
+            for(int i=0; i<this.entrada.length(); i++){
+                if(this.posError.contains(i)){
+                    System.out.print("^");
+                }else {
+                    System.out.print(" ");
+                }
+
+            }
+            System.out.println();
+            System.out.println();
             System.out.println("Número de errores " +  this.observaciones);
-            for(String o : output)
-                System.out.println(o);
         }
     }
 
