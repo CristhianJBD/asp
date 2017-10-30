@@ -17,7 +17,7 @@ public class ASP {
         //Se guarda en un hash los valores de la tabla, donde la clave seria un " noTerminal' -> 'terminal'
         System.out.println("\nHash:");
         for(int i=0 ; i < tabla.size()-1 ; i++) {
-            for (int j = 0 ; j < tabla.size() ; j++) {
+            for (int j = 0 ; j < tabla.get(0).size()-1 ; j++) {
                 treeMap.put(tabla.get(i+1).get(0).toString()+ "->" + tabla.get(0).get(j+1).toString(), tabla.get(i+1).get(j+1).toString());
                 System.out.println("Clave: " + tabla.get(i+1).get(0).toString()+ "->" + tabla.get(0).get(j+1).toString() + "   Valor: " +  tabla.get(i+1).get(j+1).toString());
             }

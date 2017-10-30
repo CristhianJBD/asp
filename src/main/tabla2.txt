@@ -1,0 +1,6 @@
+ + - * / ( ) n i $
+E - - - - E->TR - E->TR E->TR -
+R R->+TR R->-TR - - - R->Ɛ - - R->Ɛ
+T - - - - T->FQ - T->FQ T->FQ -
+Q Q->Ɛ Q->Ɛ Q->*FQ Q->/FQ - Q->Ɛ - - Q->Ɛ
+F - - - - F->(E) - F->n F->i -

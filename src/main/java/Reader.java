@@ -16,7 +16,7 @@ public class Reader {
         List<List<String>> tabla = new ArrayList<List<String>>();
         try
         {
-            input =  new BufferedReader(new FileReader("src/main/array.txt"));
+            input =  new BufferedReader(new FileReader("src/main/tabla2.txt"));
             String line = null;
             while (( line = input.readLine()) != null)
             {
